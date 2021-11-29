@@ -5,14 +5,13 @@ Android - приложение, загружающее информацию из
 
 1. Kotlin
 1. MVVM
-MVVM
-Clean Architecture
-OAUTH2
-ViewModel
-LiveData
-Hilt (for dependency injection)
-Kotlin Coroutines
-Retrofit
-Glide
-Room
-Navigation
+1. Clean Architecture
+1. OAUTH2
+1. ViewModel
+1. LiveData
+1. Hilt (for dependency injection)
+1. Kotlin Coroutines
+1. Retrofit
+1. Glide
+1. Room
+1. Navigation
