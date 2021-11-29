@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_first"
+    app:startDestination="@id/signInFragment">
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.psychojean.gitpie.ui.signin.SignInFragment"
+        android:label="Sign in"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_signInFragment_to_authorizationFragment"
+            app:destination="@id/authorizationFragment" />
+
+        <action
+            android:id="@+id/action_signInFragment_to_repositoriesFragment"
+            app:destination="@id/repositoriesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/authorizationFragment"
+        android:name="com.psychojean.gitpie.ui.authtorization.AuthorizationFragment"
+        android:label="Authorization"
+        tools:layout="@layout/fragment_authorization">
+        <action
+            android:id="@+id/authorizationFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.psychojean.gitpie.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/profileFragment_to_followingFragment"
+            app:destination="@+id/followingFragment"/>
+        <action
+            android:id="@+id/profileFragment_to_followersFragment"
+            app:destination="@+id/followersFragment"/>
+        <action
+            android:id="@+id/profileFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/profileFragment_to_repositoriesFragment"
+            app:destination="@+id/repositoriesFragment" />
+        <action
+            android:id="@+id/profileFragment_to_repositoryFragment"
+            app:destination="@+id/repositoryFragment" />
+        <action
+            android:id="@+id/profileFragment_to_starredFragment"
+            app:destination="@+id/starredFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/repositoriesFragment"
+        android:name="com.psychojean.gitpie.ui.repositories.RepositoriesFragment"
+        android:label="Repositories"
+        tools:layout="@layout/fragment_repositories">
+    <action
+            android:id="@+id/repositoriesFragment_to_repositoryFragment"
+            app:destination="@+id/repositoryFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.psychojean.gitpie.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.psychojean.gitpie.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/settingsFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/repositoryFragment"
+        android:name="com.psychojean.gitpie.ui.repository.RepositoryFragment"
+        android:label="Repository"
+        tools:layout="@layout/fragment_repository">
+        <action
+            android:id="@+id/repositoryFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <argument
+            android:name="repo"
+            app:argType="string" />
+        <argument
+            android:name="owner"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/starredFragment"
+        android:name="com.psychojean.gitpie.ui.starred.StarredFragment"
+        android:label="Starred"
+        tools:layout="@layout/fragment_starred" >
+        <action
+            android:id="@+id/starredFragment_to_repositoryFragment"
+            app:destination="@+id/repositoryFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/followingFragment"
+        android:name="com.psychojean.gitpie.ui.follow.FollowingFragment"
+        android:label="Following"
+        tools:layout="@layout/fragment_following">
+    <argument
+        android:name="owner"
+        app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/followersFragment"
+        android:name="com.psychojean.gitpie.ui.follow.FollowersFragment"
+        android:label="Followers"
+        tools:layout="@layout/fragment_followers">
+    <argument
+        android:name="owner"
+        app:argType="string" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.splashscreen.SplashScreenActivity"
+    android:id="@+id/motion_layout"
+    android:background="?attr/backgroundColor"
+    app:layoutDescription="@xml/activity_splash_screen_scene">
+
+    <ImageView
+        android:id="@+id/github_icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_github_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"
+        app:tint="?attr/iconColor" />
+
+    <ImageView
+        android:id="@+id/github_logo"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:src="@drawable/github_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/github_icon"
+        app:layout_constraintVertical_bias="0.9"
+        app:tint="?attr/iconColor"/>
+
+</androidx.constraintlayout.motion.widget.MotionLayout >

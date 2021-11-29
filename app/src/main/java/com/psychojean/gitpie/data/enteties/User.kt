@@ -1,0 +1,38 @@
+package com.psychojean.gitpie.data.enteties
+
+import com.google.gson.annotations.SerializedName
+
+data class User (
+    @SerializedName("avatar_url") val avatar: String,
+    val bio: Any,
+//    val blog: String,
+//    val company: Any,
+//    val created_at: String,
+//    val email: Any,
+//    val events_url: String,
+    val followers: Int,
+    @SerializedName("followers_url") val followersUrl: String,
+    val following: Int,
+    @SerializedName("following_url") val followingUrl: String,
+//    val gists_url: String,
+//    val gravatar_id: String,
+//    val hireable: Any,
+    @SerializedName("html_url") val html: String,
+//    val id: Int,
+//    val location: Any,
+    val login: String
+//    val name: Any
+//    val node_id: String,
+//    val organizations_url: String,
+//    val public_gists: Int,
+//    val public_repos: Int,
+//    val received_events_url: String,
+//    val repos_url: String,
+//    val site_admin: Boolean,
+//    val starred_url: String,
+//    val subscriptions_url: String,
+//    val twitter_username: Any,
+//    val type: String,
+//    val updated_at: String,
+//    val url: String
+    )

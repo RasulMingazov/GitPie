@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="iconColor" format="color"/>
+    <attr name="backgroundColor" format="color"/>
+    <attr name="buttonColor" format="color"/>
+    <attr name="textInButtonColor" format="color"/>
+    <attr name="toolbarBackgroundColor" format="color"/>
+    <attr name="toolbarTextColor" format="color"/>
+    <attr name="countProfileColor" format="color"/>
+    <attr name="toolbarColor" format="color"/>
+    <attr name="blockColor" format="color"/>
+    <attr name="shadowColor" format="color"/>
+    <attr name="progressBarColor" format="color"/>
+    <attr name="smallIconColor" format="color"/>
+    <attr name="bottomNavigationColor" format="color"/>
+    <attr name="bottomNavigationItemColor" format="color"/>
+    <attr name="simpleTextColor" format="color"/>
+    <attr name="smallBlockColor" format="color"/>
+    <attr name="finalYPosition" format="dimension"/>
+    <attr name="startXPosition" format="dimension"/>
+    <attr name="startToolbarPosition" format="dimension"/>
+    <attr name="startHeight" format="dimension"/>
+    <attr name="finalHeight" format="dimension"/>
+    <attr name="starButtonColor" format="color" />
+</resources>
